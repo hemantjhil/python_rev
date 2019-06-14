@@ -1,0 +1,38 @@
+//Changing String to number 
+
+{
+import java.util.Scanner;
+class aToi
+{
+	public static void main(String args[])
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		sc.nextLine();
+		while(t>0)
+		{
+			String str = sc.nextLine();
+			
+			GfG g = new GfG();
+			System.out.println(g.atoi(str));
+		t--;
+		}
+	}
+}
+}
+/*This is a function problem.You only need to complete the function given below*/
+/*You are required to complete this method */
+class GfG
+{
+    int atoi(String str)
+    {
+	// Your code here
+	try{
+	    return Integer.valueOf(str);
+	}
+	catch(NumberFormatException ex){
+	    return -1;
+	    
+	}
+    }
+}
